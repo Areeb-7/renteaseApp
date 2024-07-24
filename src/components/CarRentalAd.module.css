@@ -1,0 +1,158 @@
+/* CarRentalAd.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+.carRentalAd {
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 5px;
+  min-height: 10vh;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('https://images-porsche.imgix.net/-/media/FDAAC729229C404F80D9EC31F95810BC_D74CE878F57D49B88B45E2F0EA203154_001-hero-13-5-intro?w=1759&q=45&dpr=2&auto=format');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Sarabun', sans-serif;
+  color: #ffffff; /* White text color */
+}
+
+/* Keyframes for Fade In and Fade Out */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Header Content */
+.carRentalAd .headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px; /* Adjust gap between elements */
+}
+
+/* Header Content Row */
+.carRentalAd .headerContentRow {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on small screens */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust gap between elements */
+  animation: fadeIn 3s forwards; /* Default to fadeIn animation */
+}
+
+.carRentalAd .headerContentRow.fadeOut {
+  animation: fadeOut 1s forwards; /* Apply fadeOut animation when class is added */
+}
+
+/* Heading */
+.carRentalAd h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center; /* Center text for better readability on small screens */
+}
+
+/* Paragraph */
+.carRentalAd p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  width: 100%; /* Full width on small screens */
+  max-width: 600px; /* Constrain width on larger screens */
+  text-align: center; /* Center text for better readability */
+  animation: fadeIn 3s forwards; /* Default to fadeIn animation */
+}
+
+.carRentalAd p.fadeOut {
+  animation: fadeOut 1s forwards; /* Apply fadeOut animation when class is added */
+}
+
+/* Highlights Container */
+.carRentalAd .highlights {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px; /* Adjust margin as needed */
+}
+
+/* Highlight Item */
+.carRentalAd .highlight {
+  text-align: center;
+  margin: 10px;
+  padding: 20px; /* Padding for the background box */
+  border-radius: 8px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  backdrop-filter: blur(8px); /* Blur effect for modern browsers */
+  -webkit-backdrop-filter: blur(8px); /* Blur effect for Safari */
+  width: 100%; /* Full width on small screens */
+  max-width: 250px; /* Constrain width on larger screens */
+}
+
+/* Highlight Heading */
+.carRentalAd .highlight h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+/* Highlight Subheading */
+.carRentalAd .highlight h1 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Highlight Paragraph */
+.carRentalAd .highlight h6 {
+  color: #cbcaca;
+}
+
+.carRentalAd .highlight p {
+  font-size: 0.9rem; /* Slightly larger font size for readability */
+  color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carRentalAd {
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  .carRentalAd h2 {
+    font-size: 2rem; /* Adjusted font size */
+  }
+
+  .carRentalAd p {
+    font-size: 0.9rem; /* Adjusted font size */
+    max-width: 90%; /* Full width with some margin */
+  }
+
+  .carRentalAd .highlight {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .carRentalAd .highlight h3 {
+    font-size: 1.2rem; /* Adjusted font size */
+  }
+
+  .carRentalAd .highlight h1 {
+    font-size: 1rem; /* Adjusted font size */
+  }
+}

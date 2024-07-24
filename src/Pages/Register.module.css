@@ -1,0 +1,196 @@
+/* Register.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+body {
+    font-family: 'Sarabun', sans-serif;
+}
+
+.section {
+    position: relative;
+    min-height: 100vh; /* Ensures the background covers the entire viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), /* Black with 50% opacity */
+        rgba(0, 0, 0, 0.5) /* Black with 50% opacity */
+      ), url('https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.form_container {
+    margin-top: 80px;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(244, 250, 255, 0.73);
+}
+
+.data_list {
+    position: relative; /* Ensure z-index works */
+    max-width: 600px; /* Increased width to match form_container */
+    width: 100%; /* Ensure it takes the full width of its container */
+    padding: 2em;
+    background-color: rgba(251, 247, 243, 0.8); /* Background color for form and data list with opacity */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+    color: black; /* Text color against the background */
+    z-index: 1; /* Ensure form and data list appear above the background */
+    text-align: left; /* Align text content to the left */
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+}
+
+.input_group,
+.input_group_pass {
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_group label,
+.input_group_pass label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    text-align: left;
+    color: #333; /* Label text color */
+}
+
+.input_group input,
+.input_group select,
+.input_group_pass input,
+.input_group_pass select {
+    padding: 0.5em;
+    border: 1px solid #3b3939;
+    border-radius: 5px;
+    font-size: 1em;
+    width: calc(100% - 1em); /* Adjust input width to account for padding */
+}
+
+.input_group_pass {
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_group select,
+.input_group_pass select {
+    width: calc(100% - 1em); /* Adjust width of select box */
+    padding: 0.5em; /* Adjust padding to maintain consistency */
+}
+
+.image_preview {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 1em;
+    border-radius: 5px;
+}
+
+.profile_image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 1em;
+    border: 2px solid white; /* White border around profile image */
+    margin-bottom: 1em; /* Space below profile image */
+}
+
+.button_submit {
+    width: 100%;
+    padding: 0.75em;
+    background-color: #5796FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-top: 1em; /* Space above submit button */
+}
+
+.remove_button {
+    padding: 0.5em 1em;
+    background-color: #ff1744;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove_button:hover {
+    background-color: #a9233e;
+    /* Optional: Add more styles for hover state */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .form_container {
+        padding: 1.5em;
+        margin-top: 60px;
+    }
+
+    .data_list {
+        padding: 1.5em;
+    }
+
+    .input_group input,
+    .input_group select,
+    .input_group_pass input,
+    .input_group_pass select {
+        padding: 0.4em;
+        font-size: 0.9em;
+        width: calc(100% - 0.8em); /* Adjust input width to account for padding */
+    }
+
+    .button_submit {
+        padding: 0.6em;
+        font-size: 0.9em;
+    }
+
+    .remove_button {
+        padding: 0.4em 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .form_container {
+        padding: 1em;
+        margin-top: 40px;
+    }
+
+    .data_list {
+        padding: 1em;
+    }
+
+    .input_group input,
+    .input_group select,
+    .input_group_pass input,
+    .input_group_pass select {
+        padding: 0.3em;
+        font-size: 0.8em;
+        width: calc(100% - 0.6em); /* Adjust input width to account for padding */
+    }
+
+    .button_submit {
+        padding: 0.5em;
+        font-size: 0.8em;
+    }
+
+    .remove_button {
+        padding: 0.3em 0.6em;
+    }
+}

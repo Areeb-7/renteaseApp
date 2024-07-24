@@ -1,0 +1,135 @@
+/* FAQ Component Styles */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+.faqContainer {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 20px;
+    min-height: 50vh;
+    font-family: 'Sarabun', sans-serif;
+
+}
+
+/* Responsive adjustments for FAQ Container */
+@media (max-width: 768px) {
+    .faqContainer {
+        padding: 15px;
+    }
+}
+
+/* FAQ List */
+.faqList {
+    margin-top: 20px;
+}
+
+/* Responsive adjustments for FAQ List */
+@media (max-width: 768px) {
+    .faqList {
+        margin-top: 10px;
+    }
+}
+
+/* Row and Column for layout */
+.row {
+    display: flex;
+    gap: 20px; /* Adjust gap as needed */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Responsive adjustments for Row */
+@media (max-width: 768px) {
+    .row {
+        gap: 10px;
+    }
+}
+
+/* Column for layout */
+.column {
+    flex: 1;
+}
+
+/* FAQ Item */
+.faqItem {
+    margin-bottom: 20px;
+}
+
+/* FAQ Question */
+.faqQuestion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #5796FF;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Responsive adjustments for FAQ Question */
+@media (max-width: 768px) {
+    .faqQuestion {
+        padding: 10px;
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* FAQ Question Hover State */
+.faqQuestion:hover {
+    background-color: #1184ff;
+}
+
+/* FAQ Question Active State */
+.faqQuestion.active {
+    background-color: #f0f0f0;
+    color: #000000;
+    border-color: #007bff;
+    transition: background-color 0.6s ease, color 0.3s ease, border-color 0.3s ease;
+
+}
+
+/* FAQ Answer */
+.faqAnswer {
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Responsive adjustments for FAQ Answer */
+@media (max-width: 768px) {
+    .faqAnswer {
+        padding: 10px;
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Arrow for indication */
+.arrow {
+    margin-left: auto;
+    font-size: 1.2rem;
+}
+
+/* Responsive adjustments for Arrow */
+@media (max-width: 768px) {
+    .arrow {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Center Style */
+.centerStyle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Responsive adjustments for Center Style */
+@media (max-width: 768px) {
+    .centerStyle {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+}

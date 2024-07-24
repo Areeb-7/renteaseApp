@@ -1,0 +1,169 @@
+/* Features.module.css */
+
+/* Container for features */
+.featuresContainer {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Sarabun', sans-serif;
+}
+
+/* Headings */
+.featuresContainer h2 {
+  color: #5b7fff;
+}
+
+.featuresContainer h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+.featuresContainer p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Grid layout for features */
+.features {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  align-items: center;
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1200px) {
+  .features {
+    grid-template-columns: 1fr 3fr 1fr; /* Adjust layout for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    grid-template-columns: 1fr; /* Stack items vertically on small screens */
+    gap: 20px; /* Increase gap for small screens */
+  }
+
+  .featuresContainer h1 {
+    font-size: 2em; /* Adjust font size for small screens */
+  }
+
+  .featuresContainer p {
+    font-size: 1em; /* Adjust font size for small screens */
+  }
+
+  .feature {
+    padding: 15px; /* Increase padding for better readability */
+    font-size: 0.9em; /* Adjust font size for small screens */
+  }
+
+  .feature h3 {
+    font-size: 1.2em; /* Adjust font size for small screens */
+  }
+}
+
+/* Column styles */
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Features columns with animations */
+.featuresColumn {
+  display: flex;
+  margin-left: 60px;
+  flex-direction: column;
+  width: 300px; /* Adjust this value as needed */
+  gap: 60px;
+  /* Ensure that animations don’t affect layout */
+  transition: transform 0.3s ease-in-out, opacity 1s ease-in-out;
+}
+.featuresColumn1 {
+  margin-right: 60px;
+  width: 300px; /* Adjust this value as needed */
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  /* Ensure that animations don’t affect layout */
+  transition: transform 0.3s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* Animation for visibility */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animateIn {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Feature item styles */
+.feature {
+  text-align: left;
+  padding: 10px; /* Adjust padding */
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 2em;
+  margin-bottom: 5px; /* Adjust margin */
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  margin: 5px 0; /* Adjust margin */
+}
+
+.feature p {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Car container styles */
+.carContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carImage {
+  max-width: 90%;
+  height: auto;
+}
+
+.introText p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+  white-space: pre-line; /* This will preserve spaces and line breaks */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .carImage {
+    max-width: 90%; /* Adjust car image size for small screens */
+  }
+
+  .introText p {
+    font-size: 1em; /* Adjust font size for small screens */
+  }
+}
+
+/* Additional styles for elements that are visible on scroll */
+.column.animateIn {
+  animation: fadeIn 3s ease-out;
+}

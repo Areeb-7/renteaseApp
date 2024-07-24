@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(78, 73, 73, 0.1);
+    font-family: Arial, sans-serif;
+    margin-left: 300px;
+    border: 2px solid #b5afaf93;
+    font-family: 'Sarabun', sans-serif;
+
+    
+
+}
+.main{
+    max-height: 100px;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+
+.profileDetails {
+    width: 75%;
+    padding: 20px;
+}
+
+.profilePic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.email {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuItem {
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menuItem:hover {
+    color: #007bff;
+}
+
+.profileForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin: 20px;
+    margin-right: 10px;
+    font-size: 1.3em;
+    color: #007bff;
+padding: 10px;
+
+
+}
+
+.formGroup {
+    width: 48%;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.updateButton {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+}
+
+.buttonGroup {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.editButton,
+.updateButton,
+.cancelButton {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.editButton {
+    background-color: #007bff;
+    color: white;
+}
+
+.updateButton {
+    background-color: #28a745;
+    color: white;
+    margin-right: 10px;
+}
+
+.cancelButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.header_image {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.header_image p {
+    font-size: 5em;
+    color: #ffffff;
+}
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}

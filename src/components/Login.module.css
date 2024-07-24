@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('https://www.porschedriving.com/los-angeles/-/media/porschedrivinglosangeles/backgrounds/pecla-on-track/desktop/01122024_pecla_on-the-track_hero-banner_desktop_gt3-manthey.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.loginForm {
+    background-color: rgba(251, 247, 243, 0.8);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.inputGroup {
+    margin-bottom: 1.5em;
+}
+
+.inputGroup label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #333;
+    text-align: left;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.separator {
+    margin: 2em 0;
+    border-top: 1px solid #111010;
+}
+
+.socialLoginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.line {
+    flex: 1;
+    width: 100%;
+    max-width: 300px; /* Adjust max-width as needed */
+    height: 1px;
+    background-color: #333;
+}
+
+.signUpWith,
+.orSignupWith {
+    margin: 1em 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.socialLoginIcons {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.socialIconBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.socialIcon {
+    width: 40px; /* Same size for all icons */
+    height: 40px; /* Same size for all icons */
+    margin-bottom: 5px;
+    background: none; /* Ensures no background for the icons */
+    object-fit: cover; /* Ensures aspect ratio is maintained */
+}
+
+.socialIcon2 {
+    width: 50px; /* Same size for all icons */
+    height: 40px; /* Same size for all icons */
+    margin-bottom: 5px;
+    background: none; /* Ensures no background for the icons */
+    object-fit: cover; /* Ensures aspect ratio is maintained */
+}
+
+.socialText {
+    font-size: 1em;
+    color: #333;
+}
+
+.socialLoginLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.socialLoginLink:hover .socialIcon {
+    opacity: 0.8;
+}
+
+.loginButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75em;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.loginButton:hover {
+    background-color: #0056b3;
+}
+
+.getStartedLink {
+    display: block;
+    margin-top: 1em;
+}
+
+.getStartedButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75em;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.getStartedButton:hover {
+    background-color: #218838;
+}
+
+.loginMessage {
+    color: red;
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .loginForm {
+        padding: 1.5em;
+        max-width: 90%;
+    }
+
+    .inputGroup label {
+        font-size: 0.9em;
+    }
+
+    .inputGroup input {
+        padding: 0.5em;
+        font-size: 0.9em;
+    }
+
+    .socialIcon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .socialIcon2 {
+        width: 40px;
+        height: 35px;
+    }
+
+    .loginButton,
+    .getStartedButton {
+        padding: 0.6em;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginForm {
+        padding: 1em;
+        max-width: 100%;
+    }
+
+    .inputGroup label {
+        font-size: 0.8em;
+    }
+
+    .inputGroup input {
+        padding: 0.5em;
+        font-size: 0.8em;
+    }
+
+    .socialIcon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .socialIcon2 {
+        width: 35px;
+        height: 30px;
+    }
+
+    .loginButton,
+    .getStartedButton {
+        padding: 0.5em;
+        font-size: 0.8em;
+    }
+}

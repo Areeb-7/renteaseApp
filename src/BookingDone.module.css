@@ -1,0 +1,154 @@
+/* BookingDone.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.successMessage {
+    font-size: 24px;
+    color: #4caf50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.successImage {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 2px solid #4caf50;
+}
+
+.driverCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.driverImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.driverDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.driverName {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.driverState {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.driverFeedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.ratingIcon {
+    font-size: 16px;
+    color: #007bff; /* Blue color for the rating */
+    margin-left: 5px; /* Spacing between rating number and star */
+}
+
+.ratingIcon::before {
+    content: "★";
+    margin-right: 5px;
+    font-size: 16px;
+    color: #007bff; /* Blue color for the star */
+}
+
+.doneButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.doneButton:hover {
+    background-color: #0056b3;
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .successMessage {
+        font-size: 20px;
+    }
+    
+    
+
+    .successImage {
+        width: 80px;
+        height: 80px;
+    }
+
+    .driverCard {
+        padding: 15px;
+        max-width: 90%;
+    }
+}
+
+.section {
+    position: relative;
+    min-height: 100vh; /* Ensures the background covers the entire viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), /* Black with 50% opacity */
+        rgba(0, 0, 0, 0.5) /* Black with 50% opacity */
+      ), url('https://images-porsche.imgix.net/-/media/FDAAC729229C404F80D9EC31F95810BC_D74CE878F57D49B88B45E2F0EA203154_001-hero-13-5-intro?w=1759&q=45&dpr=2&auto=format');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

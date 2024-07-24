@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+.stepsContainer {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Sarabun', sans-serif;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.stepsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.stepRow {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.sideBySide {
+  width: 45%;
+  margin: 0 20px;
+}
+
+.hidden {
+  opacity: 0; /* Hide element visually */
+  visibility: hidden; /* Hide element from layout */
+}
+
+.verticalLine {
+  position: absolute;
+  width: 4px; /* Increased width */
+  background-color: #007bff;
+  height: 600px; /* Increased height */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin-left: 10px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  opacity: 0;
+  transform: translateY(100px);
+  position: relative; /* Ensure relative positioning for pseudo-elements */
+}
+
+.step:before,
+.step:after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 20px; /* Adjust width as needed */
+  height: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.step:nth-child(even):before {
+  left: -22px; /* Adjust positioning as needed */
+}
+
+.step:nth-child(even):after {
+  right: -22px; /* Adjust positioning as needed */
+}
+
+.step:nth-child(odd):before {
+  right: -22px; /* Adjust positioning as needed */
+}
+
+.step:nth-child(odd):after {
+  left: -22px; /* Adjust positioning as needed */
+}
+
+.stepNumber {
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  z-index: 2; /* Ensure step number appears above white box */
+}
+
+.stepContent {
+  z-index: 2; /* Ensure step content appears above white box */
+}
+
+.stepContent h3 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+.stepContent p {
+  margin: 0;
+  color: #666;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.motionDiv {
+  height: 4px;
+  background-color: #007bff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform-origin: left;
+}

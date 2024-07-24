@@ -1,0 +1,137 @@
+/* Contact Container */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+.Contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 50vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('https://images.unsplash.com/photo-1494905998402-395d579af36f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    font-family: 'Sarabun', sans-serif;
+
+}
+
+/* Contact Text */
+.Contact-text {
+    flex: 0 0 30%; /* Adjust width as needed */
+    color: white;
+    text-align: center;
+    padding-right: 20px; /* Padding on the right for spacing */
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center;
+}
+
+/* Responsive adjustments for Contact Text */
+.Contact-text2 {
+    font-size: 2.5em; /* Adjust font size for smaller screens */
+    margin-top: 20px; /* Add space between paragraphs */
+}
+
+.Contact-text3 {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+    margin-top: 10px; /* Add space between paragraphs */
+}
+
+/* Contact Info */
+.Contact-info {
+    text-align: center;
+    margin-top: 20px;
+    flex: 0 0 30%; /* Adjust width as needed */
+    color: white;
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    padding-right: 20px; /* Padding on the right for spacing */
+    padding-top: 60px;
+}
+
+/* Responsive adjustments for Contact Info */
+.Contact-info1 {
+    font-size: 2.5em; /* Adjust font size for smaller screens */
+}
+
+.Contact-info2 {
+    font-size: 1.8em; /* Adjust font size for smaller screens */
+    margin-top: 10px;
+}
+
+.Contact-info3 {
+    font-size: 1.8em; /* Adjust font size for smaller screens */
+    margin-top: 20px;
+}
+
+/* Phone Number */
+.phone-number {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .Contact-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center;
+    }
+
+    .Contact-text, .Contact-info {
+        flex: 0 0 100%; /* Full width for smaller screens */
+        padding-right: 0; /* Remove right padding */
+        padding-top: 20px; /* Adjust top padding */
+    }
+
+    .Contact-text2 {
+        font-size: 2em; /* Further reduce font size */
+    }
+
+    .Contact-text3 {
+        font-size: 1em; /* Further reduce font size */
+    }
+
+    .Contact-info1 {
+        font-size: 2em; /* Further reduce font size */
+    }
+
+    .Contact-info2, .Contact-info3 {
+        font-size: 1.5em; /* Further reduce font size */
+    }
+
+    .phone-number {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .Contact-text2 {
+        font-size: 1.8em; /* Further reduce font size */
+    }
+
+    .Contact-text3 {
+        font-size: 0.9em; /* Further reduce font size */
+    }
+
+    .Contact-info1 {
+        font-size: 1.8em; /* Further reduce font size */
+    }
+
+    .Contact-info2, .Contact-info3 {
+        font-size: 1.2em; /* Further reduce font size */
+    }
+
+    .phone-number {
+        font-size: 0.9em; /* Adjust font size for very small screens */
+    }
+}

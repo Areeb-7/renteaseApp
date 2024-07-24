@@ -1,0 +1,102 @@
+/* ProfileSidebar.module.css */
+
+/* html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+.sidebar {
+    font-family: 'Sarabun', sans-serif;
+
+    width: 250px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    left: 20px; /* Fixed position on the left */
+    top: 50%; /* Vertically center */
+    transform: translateY(-35%); /* Shift up by 50% of its own height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 2px solid #b5afaf93;
+min-height: 20px;
+
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.options {
+    width: 100%;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navItem {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.navLink {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.navLink:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.signOutButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signOutButton:hover {
+    background-color: #c82333;
+}

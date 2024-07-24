@@ -1,0 +1,252 @@
+/* Car details container */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+.car-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sarabun', sans-serif;
+
+}
+
+.car-details-card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.carousel {
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 40%;
+}
+
+.large-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.small-image {
+    width: 100px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.small-image:hover {
+    opacity: 0.8;
+    border: 1px solid #000;
+}
+
+.customer-reviews {
+    border: 3px solid #b5afaf93;
+    margin-left: 200px;
+    margin-top: 20px;
+    overflow: hidden;
+    width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    max-height: 480px; /* Adjust this value as needed */
+}
+
+.customer-reviews h3 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.car-details {
+    font-family: Arial, sans-serif;
+    flex: 1;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+#b {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.specifications span {
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+
+.specifications b {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.spec-item {
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Added alignment to center vertically */
+    padding: 8px 0;
+}
+
+.spec-item span:first-child {
+    flex-basis: 30%; /* Adjusted to accommodate longer text */
+}
+
+.spec-item span:last-child {
+    flex-basis: 70%; /* Adjusted to accommodate longer text */
+    font-weight: bold;
+}
+
+.features {
+    margin-top: 70px;
+    margin-left: 10px;
+    border: 3px solid #b5afaf93;
+    padding: 10px;
+}
+
+.features h3 {
+    font-size: 1.9em; /* Increase font size */
+    font-weight: bold;
+    color: black;
+}
+
+.features ul {
+    list-style-type: none;
+}
+
+.feature-item {
+    font-size: 1.2em; /* Increase font size */
+    padding: 10px 0; /* Adjust padding as needed */
+    color: black;
+}
+
+.feature-item:before {
+    content: '✓ ';
+    color: blue;
+    font-weight: bold;
+}
+
+.daily-rate {
+    background-color: #d7d6d6;
+    padding: 15px 10px;
+    width: 300px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.daily-rate:hover {
+    background-color: #c3c1c1;
+}
+
+.booking-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #b5afaf93;
+}
+
+.header-image {
+    width: 100%;
+    max-height: 450px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.header-image p {
+    font-size: 5em;
+    color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .car-details-card {
+        flex-direction: column;
+    }
+
+    .carousel {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+
+    .customer-reviews {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .car-details-card {
+        padding: 15px;
+    }
+
+    .customer-reviews {
+        margin-top: 15px;
+    }
+
+    .features {
+        margin-top: 40px;
+    }
+
+    .daily-rate {
+        width: 100%;
+    }
+
+    .header-image p {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .car-details-card {
+        padding: 10px;
+    }
+
+    .customer-reviews {
+        padding: 15px;
+    }
+
+    .features {
+        padding: 8px;
+    }
+
+    .header-image p {
+        font-size: 2em;
+    }
+}

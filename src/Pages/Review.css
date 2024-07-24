@@ -1,0 +1,95 @@
+/* Review Container */
+.review-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.review-card {
+    width: 80%;
+    background-color: #C2D6F9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    scroll-snap-align: center;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    max-height: 370px; /* Adjust this value as needed */
+}
+
+/* User Image */
+.user-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Review Details */
+.review-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.review-details h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.review-details p {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.5;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .review-card {
+        width: 90%; /* Increase width for smaller screens */
+        max-height: 300px; /* Reduce max-height */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .user-image {
+        height: 150px; /* Adjust height for smaller screens */
+    }
+
+    .review-details h2 {
+        font-size: 1.3rem; /* Adjust font size */
+    }
+
+    .review-details p {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .review-card {
+        width: 95%; /* Increase width for very small screens */
+        max-height: 250px; /* Further reduce max-height */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .user-image {
+        height: 120px; /* Adjust height for very small screens */
+    }
+
+    .review-details h2 {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+
+    .review-details p {
+        font-size: 0.8rem; /* Adjust font size */
+    }
+}

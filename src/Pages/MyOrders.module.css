@@ -1,0 +1,158 @@
+/* Container Styles */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+.container {
+    width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    background-attachment: fixed;
+    font-family: 'Sarabun', sans-serif;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    border: 3px solid #b5afaf93;
+    margin-bottom: 60px;
+    min-height: 50vh; /* Full viewport height to center vertically */
+}
+
+/* Heading Styles */
+.heading {
+    font-size: 32px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Orders Styles */
+.orders {
+    margin-top: 20px;
+    width: 100%; /* Ensure orders take full width of the container */
+}
+
+/* Category Styles */
+.category {
+    margin-bottom: 40px;
+}
+
+.categoryHeading {
+    font-size: 1.7em;    
+    color: #0e0d0d;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.statusScheduled {
+    color: #ffa500;
+    font-weight: bold;
+}
+
+.statusCompleted {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.statusCancelled {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Header Image Styles */
+.header_image {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.header_image p {
+    font-size: 5em;
+    color: #ffffff;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+
+    .categoryHeading {
+        font-size: 1.5em;
+    }
+
+    .header_image p {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 24px;
+    }
+
+    .categoryHeading {
+        font-size: 1.3em;
+    }
+
+    .header_image p {
+        font-size: 2em;
+    }
+}
