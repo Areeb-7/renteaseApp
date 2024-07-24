@@ -1,0 +1,86 @@
+/* CarList.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+.carListContainer {
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide overflow */
+    background-color: #E5E8EF;
+    background-attachment: fixed;
+
+    padding: 30px;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Sarabun', sans-serif;
+
+}
+
+.carouselContainer {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    min-height: 40vh;
+}
+
+/* Optional: Adjust carousel slide styles */
+.carousel .slide {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Hide default navigation buttons */
+.carousel .control-dots {
+    display: none;
+}
+
+/* Text above carousel */
+.carouselText1 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5796FF;
+}
+
+.carouselText2 {
+    margin-bottom: 15px;
+    font-size: 37px;
+    font-weight: bold;
+    color: #0f0e0e;
+}
+
+.carouselText3 {
+    font-size: 17px;
+    color: #0f0e0e;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carouselText1 {
+        font-size: 18px;
+    }
+
+    .carouselText2 {
+        font-size: 30px;
+    }
+
+    .carouselText3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carouselText1 {
+        font-size: 16px;
+    }
+
+    .carouselText2 {
+        font-size: 25px;
+    }
+
+    .carouselText3 {
+        font-size: 13px;
+    }
+}

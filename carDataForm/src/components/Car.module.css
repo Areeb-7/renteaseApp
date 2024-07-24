@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+.carCard {
+    width: 100%;
+    max-width: 350px;
+    background-color: #ffffff98;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    transition: transform 0.2s ease-in-out;
+    background-attachment: fixed;
+    font-family: 'Sarabun', sans-serif;
+
+}
+
+.carCard:hover {
+    transform: scale(1.05);
+}
+
+.carImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.carDetails {
+    flex-grow: 1;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carInfo h3 {
+    margin: 10px 0;
+    text-align: left; /* Ensure content is aligned to the left */
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.carInfo p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.carSpecs {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap if there isn't enough space */
+    gap: 15px; /* Adjust spacing between items as needed */
+}
+
+.carSpecItem {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto; /* Allows items to grow and shrink as needed */
+}
+
+.carSpecItem i {
+    margin-right: 8px;
+    color: #555; /* Adjust color as needed */
+}
+
+.carPricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #272727; /* Light grey border line */
+    padding-top: 20px; /* Adds space between the border and the content */
+    margin-top: 30px; /* Adds space between the specs and the border */
+}
+
+.pricePerHour {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.rentButton {
+    padding: 10px 30px;
+    background-color: #5796FF; /* Blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    margin-top: 10px; /* Ensures there is space above the button */
+}
+
+.rentButton:hover {
+    background-color: #357ae8; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carCard {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .carImage {
+        height: 150px;
+    }
+
+    .carInfo h3 {
+        font-size: 1em;
+    }
+
+    .carInfo p {
+        font-size: 0.8em;
+    }
+
+    .pricePerHour {
+        font-size: 1em;
+    }
+
+    .rentButton {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
+
+.iconUser {
+    color: #5796FF; /* Blue */
+    padding-right: 7px;
+}
+
+.iconFuel {
+    color: #5796FF; /* Blue */
+    padding-right: 7px;
+
+}
+
+.iconType {
+    color: #5796FF; /* Blue */
+    padding-right: 7px;
+
+}
+
+@media (max-width: 480px) {
+    .carCard {
+        padding: 8px;
+    }
+
+    .carImage {
+        height: 120px;
+    }
+
+    .carInfo h3 {
+        font-size: 0.9em;
+    }
+
+    .carInfo p {
+        font-size: 0.75em;
+    }
+
+    .pricePerHour {
+        font-size: 0.9em;
+    }
+
+    .rentButton {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+}
